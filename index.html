@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<style>
+			body {
+			font-family: Verdana, Arial, sans-serif;
+			}
+		</style>
+		<meta name = "viewport" content = "width = device-width">
+		<link rel="stylesheet" href="farbtastic.css" type="text/css" media="all" />
+		<script src="jquery.js"></script>
+		<script src="farbtastic.js"></script>
+		<script src="jquery.ui.ipad.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('#colorpicker').farbtastic('#color');
+				$('#colorpicker').addTouch();
+			});		
+		</script>
+	</head>
+	<body>
+		<!-- <form><input type="text" id="color" name="color" value="#000000" /></form> -->
+		<div id="color" style="width:200px; height:100px;"></div>
+		<div id="colorpicker"></div>	
+	</body>
+</html>
